@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
-@EnableConfigServer // 스프링 클라우드 컨피그 서버로 활성화 한다.
+@EnableConfigServer // 스프링 클라우드 컨피그 서버로 활성화 한다
 @SpringBootApplication
 public class Application {
 
