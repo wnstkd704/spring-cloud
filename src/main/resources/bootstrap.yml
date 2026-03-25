@@ -32,4 +32,5 @@ spring:
             AAAEDw/tRRebwWeKVOwadtJpgXZPZrBiW5CBGe0RWGPcNKH10uO6hjd3yVQkhQ/nDcjivX
             8JUBoMtT7x7ngr5t3XXjAAAAEXNpbmc3MDRAbmF2ZXIuY29tAQIDBA==
             -----END OPENSSH PRIVATE KEY-----
-
+encrypt:
+  key: b1e2y3o4n5d6#
