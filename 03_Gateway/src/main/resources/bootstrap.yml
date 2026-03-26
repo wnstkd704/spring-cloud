@@ -3,4 +3,4 @@ spring:
     name: gateway-server
   cloud:
     config:
-      uri: http://localhost:8
+      uri: http://localhost:8888

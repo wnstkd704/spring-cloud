@@ -1,0 +1,31 @@
+### 로그인
+POST http://localhost:8000/department/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password":"1234"
+}
+
+### 로그아웃
+POST http://localhost:8000/department/api/v1/auth/logout
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sInVzZXJuYW1lIjoiYWRtaW4iLCJ0b2tlbl90eXBlIjoiYWNjZXNzIiwianRpIjoiMTQyY2RiNjBjNzZjNCIsImlzcyI6Imh0dHBzOi8vYWNjb3VudHMuYmV5b25kLmNvbSIsImlhdCI6MTc3NDUwMzM0MiwiZXhwIjoxNzc0NTA1MTQyfQ.sNhQrWK6GdRhkBo1EGbBJmh5Hk7KoGAFwLMXI0MAQFA
+
+### 학과 상세 조회
+GET http://localhost:8000/department/api/v1/department-service/departments/001
+
+### 학과 목록 조회
+GET http://localhost:8000/department/api/v1/department-service/departments?page=1&numOfRows=10&openYn=Y
+
+### 과목 상세 조회
+GET http://localhost:8000/subject/api/v1/subject-service/subjects/C0003400
+
+### 과목의 학과 정보 조회
+GET http://localhost:8000/subject/api/v1/subject-service/subjects/C0003400/department
+
+
+
+
+
+
+
