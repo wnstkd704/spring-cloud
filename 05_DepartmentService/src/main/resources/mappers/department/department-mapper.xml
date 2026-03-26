@@ -66,17 +66,17 @@
         </selectKey>
 
         INSERT INTO department (
-            department_no,
-            department_name,
-            category,
-            open_yn ,
-            capacity
+        department_no,
+        department_name,
+        category,
+        open_yn ,
+        capacity
         ) VALUES (
-            #{no},
-            #{name},
-            #{category},
-            #{openYn},
-            #{capacity}
+        #{no},
+        #{name},
+        #{category},
+        #{openYn},
+        #{capacity}
         )
     </insert>
 
@@ -99,7 +99,7 @@
         WHERE
         department_no = #{no}
     </update>
-    
+
     <delete id="deleteDepartment" parameterType="string">
         DELETE
         FROM department

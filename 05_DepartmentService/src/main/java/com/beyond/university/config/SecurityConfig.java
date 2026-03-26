@@ -49,8 +49,8 @@ public class SecurityConfig {
                 )
                 .authorizeHttpRequests(authorizationRequests ->
                         authorizationRequests
-                                // Swagger
-                                .requestMatchers("/v3/api-docs/**", "/swagger-ui/**").permitAll()
+                                // Swagger & actuator
+                                .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "actuator/**").permitAll()
                                 // 로그인, 토큰 재발급
                                 .requestMatchers(HttpMethod.POST, "/api/v1/auth/login", "/api/v1/auth/refresh"). permitAll()
                                 // 모든 GET 요청의 경우 허용
